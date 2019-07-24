@@ -1,0 +1,136 @@
+body { 
+    background-color: rgb(4, 53, 14); 
+}
+
+body.settings_body {
+    background-image: radial-gradient(teal, rgba(0, 0, 0, 0.842))
+    /* background-image: url("horse_head_nebula.jpg") */
+}
+p { 
+    color: white; 
+    font-size: 1em;
+    /*
+    margin-top: -1em;
+    */
+}
+
+div {
+    color: pink;
+    font-size: 1em;
+}
+
+
+a {
+    color: forestgreen;
+}
+
+a:hover {
+    color: lightseagreen;
+}
+
+
+.specific_page {
+    color: rgb(243, 128, 166);
+}
+
+.button_text { color: black; }
+
+.replacable { 
+    margin-top: 2em;
+    max-width: 8em;
+    float:left;
+}
+
+a#homepage { 
+    color: pink; 
+}
+
+#sloagan {
+    color: gold;
+    text-align: justify;
+    margin-left: 5em;
+}
+
+div.logo {
+    max-width: 30em;
+    min-width: 26em;
+    text-align: center;
+    /* border: .3em; 
+    border-style: solid; */
+}
+
+div.user_actions { 
+    float: right;
+    font-size: .9em;
+    margin-left: 44em;
+    margin-top: -7em;
+    border-color: rgba(110, 0, 0, 0.555);
+    border-style: groove;
+    border-radius: 1em;
+    border-width: .5em;
+    min-width: 8em;
+    max-width: 12em;
+    padding: .1em;
+    box-shadow: 0em 0em .1em .1em palegreen,
+                .3em .3em 0em .3em black;
+}
+
+div.menu {
+    /* border: 0.1em solid #555; */
+    margin-top: 4em;
+    min-width: 38em;
+    min-height: 3em;
+    max-height: 4em;
+    background: #333;
+}
+
+ul.menu li {
+    background: black;
+    list-style-type: none;
+    margin: .1em;
+    padding: 0em;
+    overflow: hidden;
+    display: inline;
+    float:left;
+    text-align: center;
+    padding: .8em 1.8em;
+    text-decoration: none;
+    border: .1em solid #c88;
+}
+
+ul.menu li a {
+    color: pink;
+}
+ul.menu li a:hover {
+    color: #a3d;
+}
+
+aside {
+    margin-left: -25em;
+    margin-top: 5em;
+    color: #c88;
+    text-align: left;
+    max-width: 8em;
+    float: left;
+}
+
+p.quote {
+    color: #c88;
+}
+
+div.content {
+    margin-top: 4em;
+    margin-left: 10em;
+    text-align: center;
+    font-size: 1.2em;
+    border-style: solid;
+    border-color: black;
+    border: .3em;
+    max-width: 40em;
+    min-width: 20em;
+}
+
+div.content p {
+    font-size: 1.1em;
+    color: pink;
+}

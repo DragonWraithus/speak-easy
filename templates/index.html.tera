@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--This is private. Stop looking at my html.-->
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+<!--    <meta name="description" content="A form testp age">
+    <meta name = "author" content="John Smith">
+    <meta name="viewport" content="width=device-with, initial-scale='">
+    -->
+</head>
+<body>
+    <div class="logo">
+        <p><!--QUIT LOOKING AT MY SOURCE CODE!--></p>
+        <h1 id="homepage">{{ title }}</h1>
+        <h3 id="sloagan">A place to relax</h3>
+    </div>
+    
+    <div class="user_actions">
+        <ul id="upper_right">
+            <li>Edit Profile</li>
+            <li>Dashboard</li>
+            <li><a href="/user_settings">Settings</a></li>
+        </ul>
+    </div>
+    
+    <div class="replacable">
+        <p>{{ replace }}</p>
+    </div>
+    
+    <div class="menu">
+        <ul class="menu">
+            <li><a href="/friend_list">Friends</a></li>
+            <li>Feed</li>
+            <li>Tags</li>
+            <li style="float:right">Search</li>
+        </ul>
+    </div>
+
+    <aside>
+        <h1>On Life</h1>
+        <p class="quote"> 
+            {{ user_quote }}
+        </p>
+        I cannot go <br>
+        <br>
+        back <br>
+        nor <br>
+        forward <br>
+        <br>
+        In the present, <br>
+        I am caught. <br>
+    </aside>
+    
+    <div class="content">
+        <h2>Home</h2>
+        <!-- Nedes to have a scrolling feed. -->
+        <p>
+            {{ content }}
+            <br>
+            Does this text differ
+            <br>
+            from the inserted content?
+            <br>
+            No.
+            
+        </p>
+    </div>
+
+    </body>
+</html>
