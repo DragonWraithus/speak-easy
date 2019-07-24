@@ -34,6 +34,48 @@ fn dead() -> Template {
     Template::render("dead_page", &content)
 }
 
+// // Possibly change referer to an '@tag'?
+// type UserBox = Box<User>;
+
+#[derive(FromForm)]
+struct User {
+    id: u64,
+    name: String,
+    referer: Option<u64>,
+    age: Option<u8>,
+}
+
+
+impl User {
+    fn empty(name: &str) -> User {
+        User{
+            id: 0,
+            name: name.to_string(),
+            referer: None,
+            age: None,
+        }
+    }
+
+    fn new(name: &str, referer: u64, age: u8) -> User {
+        User{
+            id: 0, // change to search DB and assign rand id?
+            name: name.to_string(),
+            referer: Some(referer),
+            age: Some(age),
+        }
+    }
+
+    // fn box_user(user: User) -> Option<UserBox> {
+    //     Some(Box::new(user))
+    // }
+}
+
+// // quick reference
+// #[post("/todo", data = "<user>")]
+// fn collect(user: Option<Form<User>>) -> String {
+//     "test".to_string()
+// }
+
 fn main() {
     rocket::ignite()
         .mount("/", StaticFiles::from("templates"))
